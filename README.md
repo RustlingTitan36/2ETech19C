@@ -1,3 +1,3 @@
 # 2ETech19C
 
-# a
+Szkolne repozytorium
