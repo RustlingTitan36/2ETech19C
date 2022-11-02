@@ -47,24 +47,23 @@ namespace ConsoleApp20
             // 28 = 1 + 2 + 4 + 7 + 14 (jest)
             // 496 (jest)
 
-            int n = int.Parse(Console.ReadLine());
+            int x = int.Parse(Console.ReadLine());
             int suma = 0;
-            for (int i = 1; i < n; i++)
+            for (int i = 1; i < x; i++)
             {
-                if (n%i==0)
+                if (x%i == 0)
                 {
-                    suma += i;
+                    suma = suma + i;
                 }
             }
-            if (n==suma)
+            if (x == suma)
             {
-                Console.WriteLine($"liczba {n} jest doskonała");
+                Console.WriteLine("JEST DOSKONAŁA");
             }
             else
             {
-                Console.WriteLine($"liczba {n} nie jest doskonała");
+                Console.WriteLine("NIE JEST DOSKONAŁA");
             }
-            
         }
     }
 }
