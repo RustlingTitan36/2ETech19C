@@ -1,16 +1,47 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp20
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            /*
+             5. (medium) Sprawdź czy trzy wprowadzone przez użytkownika liczby spełniają nierówność trójkąta.
+                Wejście: a, b, c
+                Wyjście: TAK / NIE
+            
+            int a, b, c;
+            a = int.Parse(Console.ReadLine());
+            b = int.Parse(Console.ReadLine());
+            c = int.Parse(Console.ReadLine());
+            if (a+b>c)
+            {
+                if (a+c>b)
+                {
+                    if (b+c>a)
+                    {
+                        Console.WriteLine("TAK");
+                    }
+                    else
+                    {
+                        Console.WriteLine("NIE");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("NIE");
+                }
+            }
+            else
+            {
+                Console.WriteLine("NIE");
+            }
+            */
             // ZAD1
             /*
             int n;
@@ -155,8 +186,8 @@ namespace ConsoleApp1
             {
                 for (int j = 1; j < n + 1; j++)
                 {
-                    if (i + j == n/2 + 2 || i + j == 15) Console.Write("*");
-                    else Console.Write("#");
+                    if (i + j == n/2 + 2 || i + j == 3 * n/2 + 1 || Math.Abs(i - j) == n/2) Console.Write("*");
+                    else Console.Write(" ");
                 }
                 Console.WriteLine();
             }
